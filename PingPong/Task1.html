@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="CSS/Task1.css">
         <script type="module">
             import MagicBallManager from "./JS/MagicBallManager.js";
+            import PlatformManager from "./JS/PlatformManager.js";
             // Загружаем скрипт JS/MagicBallManager.js
                             // (только в этой форме {type="module"} доступен такой способ)
             MagicBallManager.setBallSpeed(200);// скорость шара по умолчанию
@@ -15,9 +16,12 @@
             MagicBallManager.StartDom("MagicBall");//Вызов функции Start внутри класса
                                                 //MagicBallManager из MagicBallManager.js
                                                 //посредством экземпляра magicBallManager
+            PlatformManager.AddPlayerPlatform("#playerPlatform");
+            PlatformManager.RegisterPageEvents();
         </script>
     </head>
     <body>
         <img class="MagicBall" src="Images/lightning.png"/>
+        <img class="PlayerPlatform" src="Images/platform.png" id="playerPlatform"/>
     </body>
 </html>

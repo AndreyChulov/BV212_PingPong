@@ -96,6 +96,7 @@ class MagicBallManager { // класс скрыт снаружи благода�
         }
         if ((this._imgTop <  this._minY) || (this._imgTop > this._maxY - 50)) {
             this._deltaY *= -1;
+            
         }
     }
 }
