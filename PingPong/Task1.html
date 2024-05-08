@@ -16,12 +16,16 @@
             MagicBallManager.StartDom("MagicBall");//Вызов функции Start внутри класса
                                                 //MagicBallManager из MagicBallManager.js
                                                 //посредством экземпляра magicBallManager
-            PlatformManager.AddPlayerPlatform("#playerPlatform");
+            PlatformManager.AddPlayerPlatform("playerPlatform");
+            PlatformManager.AddOpponentPlatform("opponentPlatform")
+            PlatformManager.AddOpponentTarget("magicBall")
             PlatformManager.RegisterPageEvents();
+            PlatformManager.StartOpponent();
         </script>
     </head>
     <body>
-        <img class="MagicBall" src="Images/lightning.png"/>
+        <img class="MagicBall" src="Images/lightning.png" id="magicBall"/>
         <img class="PlayerPlatform" src="Images/platform.png" id="playerPlatform"/>
+        <img class="OpponentPlatform" src="Images/platform.png" id="opponentPlatform"/>
     </body>
 </html>

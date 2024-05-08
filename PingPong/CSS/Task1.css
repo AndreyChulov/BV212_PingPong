@@ -17,7 +17,18 @@
     position: absolute;
     right: 0;
     top: 0;
-    transition-duration: 0.5s, 0.5s;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-property: top;
+}
+.OpponentPlatform{
+    width: 20px;
+    height: 150px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition-duration: 0.5s;
     transition-timing-function: linear;
     transition-property: top;
 }

@@ -89,7 +89,7 @@ class MagicBallManager { // класс скрыт снаружи благода�
      * @private
      */
     _MagicBallScreenBounce(){
-        console.log("MagicBallScreenBounce", this);
+        //console.log("MagicBallScreenBounce", this);
 
         if ((this._imgLeft <  this._minX) || (this._imgLeft > this._maxX - 50)) {
             this._deltaX *= -1;
